@@ -1,0 +1,5 @@
+package com.xoriant.delivery.resource;
+
+public class BrandResource {
+
+}

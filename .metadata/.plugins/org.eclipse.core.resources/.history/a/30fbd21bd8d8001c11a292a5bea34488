@@ -1,0 +1,20 @@
+server:
+  port: 9095
+spring:
+    application:
+      name: API-GATEWAY
+    cloud:
+       gateway:
+        routes:
+        - id: category-service
+          uri: localhost:9090
+          predicates:
+            - Path=/api/category/**
+        - id: brand-service
+          uri: lb://brand-service
+          predicates:
+            - Path=/api/brands/**
+        - id: product-service
+          uri: lb://product-service
+          predicates:
+            - Path=/api/product/**

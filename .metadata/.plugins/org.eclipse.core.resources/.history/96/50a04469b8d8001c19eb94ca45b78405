@@ -1,0 +1,5 @@
+package com.xoriant.delivery.dao;
+
+public interface BrandDao {
+
+}

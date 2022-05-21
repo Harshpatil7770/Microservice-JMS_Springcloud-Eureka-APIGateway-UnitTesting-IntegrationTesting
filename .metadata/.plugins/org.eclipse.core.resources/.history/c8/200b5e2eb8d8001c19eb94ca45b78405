@@ -1,0 +1,5 @@
+package com.xoriant.delivery.model;
+
+public class Brand {
+
+}

@@ -1,0 +1,6 @@
+package com.xoriant.ecart.service;
+
+@Service
+public class ProductServiceImpl implements ProductService {
+
+}

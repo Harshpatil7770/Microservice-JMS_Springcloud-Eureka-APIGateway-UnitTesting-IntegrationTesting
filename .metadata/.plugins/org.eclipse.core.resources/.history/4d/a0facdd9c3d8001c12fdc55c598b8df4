@@ -1,0 +1,13 @@
+package com.xoriant.ecart.service;
+
+import org.springframework.web.bind.annotation.RequestBody;
+
+import com.xoriant.ecart.dto.Brand;
+import com.xoriant.ecart.model.Category;
+
+public interface CategoryService {
+
+	Category addNewCategory(Category category);
+
+	String addNewBrand(Brand brand);
+}

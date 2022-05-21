@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.xoriant.ecart.mode&apos; to &apos;com.xoriant.ecart.model&apos;&#x0D;&#x0A;- Original project: &apos;ProductService&apos;&#x0D;&#x0A;- Original element: &apos;ProductService/src/main/java/com.xoriant.ecart.mode&apos;&#x0D;&#x0A;- Renamed element: &apos;ProductService/src/main/java/com.xoriant.ecart.model&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.xoriant.ecart.mode&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.xoriant.ecart.mode" name="com.xoriant.ecart.model" qualified="false" references="true" stamp="1653107171483" textual="false" version="1.0"/>
+</session>

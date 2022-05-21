@@ -1,0 +1,4 @@
+server.port=9095
+spring.cloud.config.uri=http://localhost:8888
+management.endpoints.web.exposure.include=hystrix.stream
+hystrix.command.fallbackmd.execution.isolation.thread.timeoutInMilliseconds=100000

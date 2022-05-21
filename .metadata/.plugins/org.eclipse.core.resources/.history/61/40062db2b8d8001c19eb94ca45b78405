@@ -1,0 +1,13 @@
+package com.xoriant.delivery.service;
+
+import com.xoriant.delivery.model.Brand;
+
+public class BrandServiceImpl implements BrandService {
+
+	@Override
+	public Brand addNewBrand(Brand brand) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

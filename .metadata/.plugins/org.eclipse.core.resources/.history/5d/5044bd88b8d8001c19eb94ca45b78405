@@ -1,0 +1,6 @@
+package com.xoriant.delivery.service;
+
+public interface BrandService {
+
+	Brand addNewBrand(Brand brand);
+}

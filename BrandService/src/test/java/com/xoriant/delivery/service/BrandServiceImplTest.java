@@ -1,0 +1,37 @@
+package com.xoriant.delivery.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.Mockito.when;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.xoriant.delivery.dao.BrandDao;
+import com.xoriant.delivery.model.Brand;
+
+@ExtendWith(MockitoExtension.class)
+class BrandServiceImplTest {
+
+	@Mock
+	private BrandDao brandDao;
+
+	@InjectMocks
+	private BrandServiceImpl brandServiceImpl;
+
+	private Brand brand;
+
+	@BeforeEach
+	public void setup() {
+		brand = new Brand(101, "Oppo");
+	}
+
+	@Test
+	public void addNewBrand() {
+		when(brandDao.save(brand)).thenReturn(brand);
+		assertEquals(brandDao.save(brand), brandServiceImpl.addNewBrand(brand));
+	}
+}

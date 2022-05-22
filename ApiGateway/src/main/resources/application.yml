@@ -13,17 +13,17 @@ spring:
           uri: http://localhost:9090
           predicates:
             - Path=/api/category/**
-          filters:
-            - name: CircuitBreaker
-              args: 
-                 name: category-service
-                 fallbackuri: forward:/categoryFallback  
+         # filters:
+          #  - name: CircuitBreaker
+          #    args: 
+           #      name: category-service
+           #      fallbackuri: forward:/categoryFallback  
         - id: brand-service
           uri: http://localhost:9091
           predicates:
             - Path=/api/brands/**
           filters:
-            - name: CircuitBreaker
+            - name: Hystrix
               args:
                 name: brand-service 
                 fallbackuri: forward:/brandFallback
@@ -31,11 +31,11 @@ spring:
           uri: http://localhost:9092
           predicates:
             - Path=/api/product/**
-          filters:
-            - name: CircuitBreaker
-              args:
-                name: product-service
-                fallbackuri: forward:/productFallback     
+        #  filters:
+         #   - name: CircuitBreaker
+          #    args:
+           #     name: product-service
+            #    fallbackuri: forward:/productFallback     
 management:
   endpoints:
     web:
